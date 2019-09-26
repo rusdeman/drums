@@ -20,17 +20,19 @@ function startPlay() {
    let strongBox = document.querySelector('.strong')
    let weakBox = document.querySelector('.weak')
    let box = document.querySelectorAll('.box')
-   box.forEach(function(element) {
+   for (let i = 0; i < box.length; i++) {
        if(weakBox) {
          setTimeout(function(){
             audioWeak.play()
          }, 1000)
       }
+   }
+      for (let i = 0; i < box.length; i++) {
       if(strongBox) {
          setTimeout(function(){
             audioStrong.play()
          }, 2000)      }
-    })
+    }
 }
 
 function renderStrong() {
