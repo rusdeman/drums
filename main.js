@@ -22,14 +22,14 @@ function startPlay() {
    let box = document.querySelectorAll('.box')
    for (let i = 0; i < box.length; i++) {
        if(weakBox) {
-         setTimeout(function(){
+         setInterval(function(){
             audioWeak.play()
          }, 1000)
       }
    }
       for (let i = 0; i < box.length; i++) {
       if(strongBox) {
-         setTimeout(function(){
+         setInterval(function(){
             audioStrong.play()
          }, 2000)      }
     }
