@@ -1,11 +1,7 @@
 html {
     background: linear-gradient(to right, #ad5389, #3c1053);
-    display: grid;
 }
 
-div {
-    font-size: 49px;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+#div {
+    display: inline-flex;
 }
